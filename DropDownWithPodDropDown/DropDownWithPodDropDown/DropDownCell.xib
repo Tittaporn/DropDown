@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="DropDownCell" id="KGk-i7-Jjw" customClass="MyCell" customModule="DropDownWithPodDropDown" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="pencil" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="RsG-S7-cIp">
+                        <rect key="frame" x="3" y="9.5" width="30" height="25.5"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="30" id="17f-FP-XbI"/>
+                            <constraint firstAttribute="height" constant="30" id="H7i-tL-SDJ"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KQU-TV-iHd">
+                        <rect key="frame" x="45" y="3" width="272" height="38"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="RsG-S7-cIp" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="3" id="7rv-yh-0xm"/>
+                    <constraint firstAttribute="bottom" secondItem="KQU-TV-iHd" secondAttribute="bottom" constant="3" id="G4a-f4-Ljg"/>
+                    <constraint firstItem="KQU-TV-iHd" firstAttribute="leading" secondItem="RsG-S7-cIp" secondAttribute="trailing" constant="12" id="Ku0-is-OwJ"/>
+                    <constraint firstItem="KQU-TV-iHd" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="3" id="Q2i-kP-B6F"/>
+                    <constraint firstAttribute="trailing" secondItem="KQU-TV-iHd" secondAttribute="trailing" constant="3" id="Y6c-wE-V0d"/>
+                    <constraint firstItem="RsG-S7-cIp" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="YUs-hK-AgY"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="myImageView" destination="RsG-S7-cIp" id="x7A-UT-qla"/>
+                <outlet property="optionLabel" destination="KQU-TV-iHd" id="QzW-3a-uej"/>
+            </connections>
+            <point key="canvasLocation" x="688" y="67"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="pencil" catalog="system" width="128" height="113"/>
+    </resources>
+</document>
